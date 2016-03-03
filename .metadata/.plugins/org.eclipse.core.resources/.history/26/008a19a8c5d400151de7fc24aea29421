@@ -1,0 +1,17 @@
+package projectThree;
+
+import java.util.Scanner;
+
+public class ChargeAccountDriver {
+
+	public static void main(String[] args) {
+		Console console = System.console();
+		Scanner scanner = new Scanner(System.in);
+		ChargeAccount hello = new ChargeAccount();
+		System.out.print("Enter a charge number >> ");
+		int inputCharge = scanner.nextInt();
+		
+		hello.acceptChargeNumber(inputCharge);
+	}
+
+}

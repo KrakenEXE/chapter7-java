@@ -1,0 +1,28 @@
+package projectThree;
+
+
+
+public class ChargeAccount {
+	
+
+		  public static boolean contains(int[] chargeAccounts, int b){
+		    for (int i : chargeAccounts) {
+		      if (i==b){
+		        return true;
+		      }
+		    }
+		    return false; 
+		  }
+		
+
+	
+	
+	public boolean acceptChargeNumber(int input){
+		boolean isValid = false;
+		
+		
+		
+		
+		return isValid;
+	}
+}

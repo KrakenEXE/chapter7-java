@@ -1,0 +1,46 @@
+package projectFive;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class ChargeAccount {
+	
+
+	  public static boolean contains(int b) throws FileNotFoundException{
+		  
+		  File file = new File("G:/ChargeNumbers.txt");
+		  Scanner fileContainer = new Scanner(new File("G:/ChargeNumbers.txt"));
+		  fileContainer.useDelimiter(",");
+		  List<Integer> temps = new ArrayList<Integer>();
+		  String token1;
+		  
+		  while(fileContainer.hasNext()){
+			  token1 = fileContainer.nextInt();
+			  temps.add(token1);
+		  }
+		  fileContainer.close();
+		  int[] tempsArray = temps.toArray(new int[18]);
+		  
+		    for(int i = 0; i < tempsArray.length; i++){
+		    	if (tempsArray[i] == b){
+			        return true;
+			      }
+		    }
+		    return false; 
+	  }
+	
+
+
+
+public boolean acceptChargeNumber(int input){
+	boolean isValid = false;
+	
+	
+	
+	
+	return isValid;
+}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;captureGrab2&apos; in &apos;projectTwo.PayrollDriver.main(...)&apos; to &apos;captureGrab&apos;&#x0D;&#x0A;- Original project: &apos;projectTwo&apos;&#x0D;&#x0A;- Original element: &apos;projectTwo.PayrollDriver.main(String[]).captureGrab2&apos;&#x0D;&#x0A;- Renamed element: &apos;captureGrab2&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;captureGrab2&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;projectTwo{PayrollDriver.java[PayrollDriver~main~\[QString;@captureGrab2!127!160!147!158!D!0!false" name="captureGrab" references="true" stamp="1455292311598" version="1.0"/>
+</session>

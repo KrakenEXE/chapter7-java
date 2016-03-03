@@ -1,0 +1,67 @@
+package projectSix;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class DrivingTest {
+
+	public static void main(String[] args) {
+		String[] correctAnswers = {"B","D","A","A","C",
+				"A","B","A","C","D",
+				"B","C","D","A","D",
+				"C","C","B","D","A"};
+		String[] inputAnswers = new String[20];
+		String flag = "A"; 
+		int wrong =0,
+				right =0;
+		Scanner scanner = new Scanner(System.in);
+		ArrayList<String> wrongAnswers = new ArrayList<>();
+
+		//establish answers from student with .add
+		//use do while loop to validate code and make sure answers are a,b,c,d
+		//use for loop 
+		
+		//compare subscripts with the i inside the for loop 
+		
+		//use an if statement to run counter for questions right
+		
+		//use an else block to increment questions wrong
+		//store array of questions that were missed and what number they were in a string array
+		
+		//check if right answers are greater than 15
+		//if answers are greater than or equal to 15 print string True
+		//else print string False
+		
+		
+		for(int i =0; i< correctAnswers.length; i++){
+			while(flag != "A" && flag != "B" && flag != "C" && flag != "D"){
+			System.out.print("Enter answer for questions "+(i+1)+" >> ");
+			flag = scanner.nextLine().toUpperCase();
+			}
+			inputAnswers[i] = flag;
+		}
+		
+		for(int i = 0; i < correctAnswers.length; i++){
+			
+			System.out.println(inputAnswers[i]);
+			if(inputAnswers[i] == correctAnswers[i]){
+				right++;
+			}
+			else{
+				wrong++;
+				wrongAnswers.add("You missed question "+(i+1)+" the answer is "+correctAnswers[i]);
+			}
+			
+		}
+		
+		if(right >= 15){
+			System.out.println("You passed with "+right+" questions right!");
+		}
+		else{
+			System.out.println("You failed with "+wrong+" questions wrong, but at least you got "+right+" questions right!");
+		}
+		
+	}
+
+
+}
